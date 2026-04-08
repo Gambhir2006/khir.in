@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admit Cards - KHIR.IN | Download Exam Admit Cards</title>
+    <meta name="description" content="Download admit cards for government exams, competitive tests, and private sector recruitment. Get instant notifications for admit card releases.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="page-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <h1><a href="index.html"><i class="fas fa-briefcase"></i> KHIR.IN</a></h1>
+                    <p>Your Career Gateway</p>
+                </div>
+                <div class="header-actions">
+                    <button class="btn-whatsapp"><i class="fab fa-whatsapp"></i> Join WhatsApp</button>
+                    <button class="btn-telegram"><i class="fab fa-telegram"></i> Join Telegram</button>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#govt-jobs">Govt Jobs</a></li>
+                    <li><a href="#private-jobs">Private Jobs</a></li>
+                    <li><a href="#internships">Internships</a></li>
+                    <li><a href="#results.html">Results</a></li>
+                    <li><a href="admit-card.html" class="active">Admit Card</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Admit Cards</h1>
+            <p>Download exam admit cards for government and private sector recruitment exams</p>
+        </div>
+    </section>
+
+    <!-- Admit Card Content -->
+    <main class="admit-card-main">
+        <div class="container">
+            <div class="admit-card-grid">
+                <!-- Main Admit Cards Section -->
+                <section class="admit-card-section">
+                    <div class="section-card">
+                        <h2><i class="fas fa-ticket-alt"></i> Latest Admit Cards</h2>
+                        
+                        <!-- Search and Filter -->
+                        <div class="admit-card-filters">
+                            <div class="search-box">
+                                <input type="text" placeholder="Search admit cards by exam name, organization..." id="admitSearch">
+                                <button type="button" onclick="searchAdmitCards()"><i class="fas fa-search"></i> Search</button>
+                            </div>
+                            <div class="filter-tabs">
+                                <button class="tab-btn active" data-category="all">All Cards</button>
+                                <button class="tab-btn" data-category="government">Government</button>
+                                <button class="tab-btn" data-category="private">Private</button>
+                                <button class="tab-btn" data-category="competitive">Competitive</button>
+                            </div>
+                        </div>
+
+                        <!-- Admit Cards List -->
+                        <div class="admit-cards-list" id="admitCardsList">
+                            <!-- Admit Card 1 -->
+                            <article class="admit-card-item" data-category="government">
+                                <div class="admit-card-header">
+                                    <span class="admit-card-badge available">Available Now</span>
+                                    <span class="admit-card-date">Released Today</span>
+                                </div>
+                                <h3><a href="#admit-1">UPSC Civil Services Main Exam 2025 Admit Card Released</a></h3>
+                                <div class="admit-card-meta">
+                                    <span><i class="fas fa-university"></i> Union Public Service Commission</span>
+                                    <span><i class="fas fa-calendar"></i> Exam: March 15, 2026</span>
+                                    <span><i class="fas fa-users"></i> 900+ Candidates</span>
+                                </div>
+                                <div class="admit-card-details">
+                                    <p><strong>Exam:</strong> Civil Services Main Examination 2025</p>
+                                    <p><strong>Download Period:</strong> March 1 - March 15, 2026</p>
+                                    <p><strong>Exam Centers:</strong> All major cities across India</p>
+                                    <p><strong>Instructions:</strong> Carry original ID proof along with admit card</p>
+                                </div>
+                                <div class="admit-card-actions">
+                                    <button class="btn-download-admit" onclick="downloadAdmitCard(1)">
+                                        <i class="fas fa-download"></i> Download Admit Card
+                                    </button>
+                                    <button class="btn-view-details" onclick="viewAdmitDetails(1)">
+                                        <i class="fas fa-info-circle"></i> View Details
+                                    </button>
+                                    <button class="btn-share-whatsapp" onclick="shareAdmitCard(1)">
+                                        <i class="fab fa-whatsapp"></i> Share
+                                    </button>
+                                </div>
+                            </article>
+
+                            <!-- Admit Card 2 -->
+                            <article class="admit-card-item" data-category="government">
+                                <div class="admit-card-header">
+                                    <span class="admit-card-badge available">Available Now</span>
+                                    <span class="admit-card-date">Released 2 days ago</span>
+                                </div>
+                                <h3><a href="#admit-2">SSC CGL Tier 3 Admit Card 2025 Released</a></h3>
+                                <div class="admit-card-meta">
+                                    <span><i class="fas fa-university"></i> Staff Selection Commission</span>
+                                    <span><i class="fas fa-calendar"></i> Exam: March 15, 2026</span>
+                                    <span><i class="fas fa-users"></i> 15,000+ Candidates</span>
+                                </div>
+                                <div class="admit-card-details">
+                                    <p><strong>Exam:</strong> Combined Graduate Level Tier 3 (Descriptive)</p>
+                                    <p><strong>Download Period:</strong> February 27 - March 15, 2026</p>
+                                    <p><strong>Exam Centers:</strong> 70+ cities across India</p>
+                                    <p><strong>Instructions:</strong> Bring blue/black pen and original photo ID</p>
+                                </div>
+                                <div class="admit-card-actions">
+                                    <button class="btn-download-admit" onclick="downloadAdmitCard(2)">
+                                        <i class="fas fa-download"></i> Download Admit Card
+                                    </button>
+                                    <button class="btn-view-details" onclick="viewAdmitDetails(2)">
+                                        <i class="fas fa-info-circle"></i> View Details
+                                    </button>
+                                    <button class="btn-share-whatsapp" onclick="shareAdmitCard(2)">
+                                        <i class="fab fa-whatsapp"></i> Share
+                                    </button>
+                                </div>
+                            </article>
+
+                            <!-- Admit Card 3 -->
+                            <article class="admit-card-item" data-category="competitive">
+                                <div class="admit-card-header">
+                                    <span class="admit-card-badge available">Available Now</span>
+                                    <span class="admit-card-date">Released 3 days ago</span>
+                                </div>
+                                <h3><a href="#admit-3">IBPS PO Interview Call Letter 2025 Released</a></h3>
+                                <div class="admit-card-meta">
+                                    <span><i class="fas fa-university"></i> Institute of Banking Personnel Selection</span>
+                                    <span><i class="fas fa-calendar"></i> Interview: March 20, 2026 Onwards</span>
+                                    <span><i class="fas fa-users"></i> 12,000+ Candidates</span>
+                                </div>
+                                <div class="admit-card-details">
+                                    <p><strong>Process:</strong> Interview for PO/MT in Public Sector Banks</p>
+                                    <p><strong>Download Period:</strong> February 26 - March 19, 2026</p>
+                                    <p><strong>Interview Centers:</strong> 50+ cities across India</p>
+                                    <p><strong>Instructions:</strong> Carry all original documents for verification</p>
+                                </div>
+                                <div class="admit-card-actions">
+                                    <button class="btn-download-admit" onclick="downloadAdmitCard(3)">
+                                        <i class="fas fa-download"></i> Download Call Letter
+                                    </button>
+                                    <button class="btn-view-details" onclick="viewAdmitDetails(3)">
+                                        <i class="fas fa-info-circle"></i> View Details
+                                    </button>
+                                    <button class="btn-share-whatsapp" onclick="shareAdmitCard(3)">
+                                        <i class="fab fa-whatsapp"></i> Share
+                                    </button>
+                                </div>
+                            </article>
+
+                            <!-- Admit Card 4 -->
+                            <article class="admit-card-item" data-category="government">
+                                <div class="admit-card-header">
+                                    <span class="admit-card-badge expected">Expected Soon</span>
+                                    <span class="admit-card-date">Expected: March 5, 2026</span>
+                                </div>
+                                <h3><a href="#admit-4">RRB Group D PET Admit Card 2025 - Expected Soon</a></h3>
+                                <div class="admit-card-meta">
+                                    <span><i class="fas fa-university"></i> Railway Recruitment Board</span>
+                                    <span><i class="fas fa-calendar"></i> PET: March 20, 2026 Onwards</span>
+                                    <span><i class="fas fa-users"></i> 2,00,000+ Candidates</span>
+                                </div>
+                                <div class="admit-card-details">
+                                    <p><strong>Process:</strong> Physical Efficiency Test (PET)</p>
+                                    <p><strong>Expected Release:</strong> March 5, 2026</p>
+                                    <p><strong>Exam Centers:</strong> 100+ locations across India</p>
+                                    <p><strong>Instructions:</strong> Bring sports shoes and water bottle</p>
+                                </div>
+                                <div class="admit-card-actions">
+                                    <button class="btn-notify" onclick="notifyAdmitCard(4)">
+                                        <i class="fas fa-bell"></i> Notify Me
+                                    </button>
+                                    <button class="btn-share-whatsapp" onclick="shareAdmitCard(4)">
+                                        <i class="fab fa-whatsapp"></i> Share
+                                    </button>
+                                </div>
+                            </article>
+
+                            <!-- Admit Card 5 -->
+                            <article class="admit-card-item" data-category="private">
+                                <div class="admit-card-header">
+                                    <span class="admit-card-badge available">Available Now</span>
+                                    <span class="admit-card-date">Released 5 days ago</span>
+                                </div>
+                                <h3><a href="#admit-5">Infosys Campus Placement Test Admit Card 2025</a></h3>
+                                <div class="admit-card-meta">
+                                    <span><i class="fas fa-building"></i> Infosys Limited</span>
+                                    <span><i class="fas fa-calendar"></i> Test: March 12, 2026</span>
+                                    <span><i class="fas fa-users"></i> 8,000+ Candidates</span>
+                                </div>
+                                <div class="admit-card-details">
+                                    <p><strong>Process:</strong> Campus Recruitment Drive</p>
+                                    <p><strong>Download Period:</strong> February 24 - March 11, 2026</p>
+                                    <p><strong>Test Centers:</strong> 200+ colleges across India</p>
+                                    <p><strong>Instructions:</strong> Bring college ID and original photo ID</p>
+                                </div>
+                                <div class="admit-card-actions">
+                                    <button class="btn-download-admit" onclick="downloadAdmitCard(5)">
+                                        <i class="fas fa-download"></i> Download Admit Card
+                                    </button>
+                                    <button class="btn-view-details" onclick="viewAdmitDetails(5)">
+                                        <i class="fas fa-info-circle"></i> View Details
+                                    </button>
+                                    <button class="btn-share-whatsapp" onclick="shareAdmitCard(5)">
+                                        <i class="fab fa-whatsapp"></i> Share
+                                    </button>
+                                </div>
+                            </article>
+
+                            <!-- Admit Card 6 -->
+                            <article class="admit-card-item" data-category="government">
+                                <div class="admit-card-header">
+                                    <span class="admit-card-badge expected">Expected Soon</span>
+                                    <span class="admit-card-date">Expected: March 8, 2026</span>
+                                </div>
+                                <h3><a href="#admit-6">Bihar Police SI PET Admit Card 2025 - Expected Soon</a></h3>
+                                <div class="admit-card-meta">
+                                    <span><i class="fas fa-university"></i> Central Selection Board of Constable</span>
+                                    <span><i class="fas fa-calendar"></i> PET: March 25, 2026 Onwards</span>
+                                    <span><i class="fas fa-users"></i> 15,000+ Candidates</span>
+                                </div>
+                                <div class="admit-card-details">
+                                    <p><strong>Process:</strong> Physical Efficiency Test for SI Posts</p>
+                                    <p><strong>Expected Release:</strong> March 8, 2026</p>
+                                    <p><strong>Test Centers:</strong> 15 locations across Bihar</p>
+                                    <p><strong>Instructions:</strong> Bring sports kit and medical certificate</p>
+                                </div>
+                                <div class="admit-card-actions">
+                                    <button class="btn-notify" onclick="notifyAdmitCard(6)">
+                                        <i class="fas fa-bell"></i> Notify Me
+                                    </button>
+                                    <button class="btn-share-whatsapp" onclick="shareAdmitCard(6)">
+                                        <i class="fab fa-whatsapp"></i> Share
+                                    </button>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Load More -->
+                        <div class="load-more">
+                            <button class="btn-load-more" onclick="loadMoreAdmitCards()">
+                                Load More Admit Cards <i class="fas fa-arrow-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Sidebar -->
+                <aside class="admit-card-sidebar">
+                    <!-- Quick Links -->
+                    <div class="widget">
+                        <h3><i class="fas fa-link"></i> Quick Download Links</h3>
+                        <ul class="quick-links">
+                            <li><a href="#upsc-admit" target="_blank">UPSC Admit Cards</a></li>
+                            <li><a href="#ssc-admit" target="_blank">SSC Admit Cards</a></li>
+                            <li><a href="#ibps-admit" target="_blank">IBPS Admit Cards</a></li>
+                            <li><a href="#rrb-admit" target="_blank">RRB Admit Cards</a></li>
+                            <li><a href="#banking-admit" target="_blank">Banking Admit Cards</a></li>
+                            <li><a href="#state-admit" target="_blank">State PSC Admit Cards</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Admit Card Categories -->
+                    <div class="widget">
+                        <h3><i class="fas fa-folder"></i> Admit Card Categories</h3>
+                        <ul class="category-list">
+                            <li><a href="#civil-services">Civil Services (23)</a></li>
+                            <li><a href="#banking">Banking & Finance (67)</a></li>
+                            <li><a href="#railway">Railway (45)</a></li>
+                            <li><a href="#defense">Defense (28)</a></li>
+                            <li><a href="#teaching">Teaching (34)</a></li>
+                            <li><a href="#engineering">Engineering (56)</a></li>
+                            <li><a href="#medical">Medical (19)</a></li>
+                            <li><a href="#private-sector">Private Sector (89)</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Upcoming Admit Cards -->
+                    <div class="widget">
+                        <h3><i class="fas fa-clock"></i> Upcoming Admit Cards</h3>
+                        <ul class="upcoming-admit-cards">
+                            <li>
+                                <div class="upcoming-info">
+                                    <h4>SSC CHSL Tier 1 Admit Card</h4>
+                                    <p>Expected: March 10, 2026</p>
+                                </div>
+                                <button class="btn-notify-small" onclick="notifyAdmitCard('chsl')">
+                                    <i class="fas fa-bell"></i>
+                                </button>
+                            </li>
+                            <li>
+                                <div class="upcoming-info">
+                                    <h4>UPPSC Prelims Admit Card</h4>
+                                    <p>Expected: March 15, 2026</p>
+                                </div>
+                                <button class="btn-notify-small" onclick="notifyAdmitCard('uppsc')">
+                                    <i class="fas fa-bell"></i>
+                                </button>
+                            </li>
+                            <li>
+                                <div class="upcoming-info">
+                                    <h4>Karnataka PSC Mains Admit Card</h4>
+                                    <p>Expected: March 18, 2026</p>
+                                </div>
+                                <button class="btn-notify-small" onclick="notifyAdmitCard('kpsc')">
+                                    <i class="fas fa-bell"></i>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Important Instructions -->
+                    <div class="widget">
+                        <h3><i class="fas fa-exclamation-triangle"></i> Important Instructions</h3>
+                        <div class="instructions-list">
+                            <div class="instruction-item">
+                                <i class="fas fa-check-circle"></i>
+                                <p>Download admit card before the last date</p>
+                            </div>
+                            <div class="instruction-item">
+                                <i class="fas fa-check-circle"></i>
+                                <p>Carry original photo ID to exam center</p>
+                            </div>
+                            <div class="instruction-item">
+                                <i class="fas fa-check-circle"></i>
+                                <p>Verify all details on the admit card</p>
+                            </div>
+                            <div class="instruction-item">
+                                <i class="fas fa-check-circle"></i>
+                                <p>Reach exam center 30 minutes early</p>
+                            </div>
+                            <div class="instruction-item">
+                                <i class="fas fa-check-circle"></i>
+                                <p>Follow COVID-19 guidelines at center</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Admit Card Notifications -->
+                    <div class="widget">
+                        <h3><i class="fas fa-bell"></i> Admit Card Alerts</h3>
+                        <p>Get instant notifications when admit cards are released</p>
+                        <form class="notification-form">
+                            <input type="email" placeholder="Enter your email" required>
+                            <input type="tel" placeholder="Mobile number (optional)">
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+
+                    <!-- Advertisement -->
+                    <div class="widget ad-widget">
+                        <h3><i class="fas fa-ad"></i> Advertisement</h3>
+                        <div class="ad-space">
+                            <p>Ad Space Available</p>
+                            <span>300x600</span>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+
+            <!-- Admit Card Statistics -->
+            <section class="stats-section">
+                <div class="section-card">
+                    <h2><i class="fas fa-chart-bar"></i> Admit Card Statistics</h2>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number">1,234</div>
+                            <div class="stat-label">Admit Cards Released This Month</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">45,678</div>
+                            <div class="stat-label">Candidates Notified</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">99.2%</div>
+                            <div class="stat-label">Download Success Rate</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">Admit Card Updates</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About KHIR.IN</h4>
+                    <p>Your trusted platform for latest government and private job opportunities in India. We provide accurate and timely job updates to help you build your career.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <div class="social-links">
+                        <a href="#whatsapp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#telegram"><i class="fab fa-telegram"></i></a>
+                        <a href="#facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <p><i class="fas fa-envelope"></i> support@khir.in</p>
+                    <p><i class="fab fa-whatsapp"></i> +91 98765 43210</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 KHIR.IN. All rights reserved. | Designed for job seekers in India</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="admit-card-script.js"></script>
+</body>
+</html>

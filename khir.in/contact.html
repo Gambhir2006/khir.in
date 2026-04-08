@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - KHIR.IN | Get in Touch</title>
+    <meta name="description" content="Contact KHIR.IN for job updates, partnerships, advertising inquiries, or support. We're here to help you with your career journey.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="page-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <h1><a href="index.html"><i class="fas fa-briefcase"></i> KHIR.IN</a></h1>
+                    <p>Your Career Gateway</p>
+                </div>
+                <div class="header-actions">
+                    <button class="btn-whatsapp"><i class="fab fa-whatsapp"></i> Join WhatsApp</button>
+                    <button class="btn-telegram"><i class="fab fa-telegram"></i> Join Telegram</button>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#govt-jobs">Govt Jobs</a></li>
+                    <li><a href="#private-jobs">Private Jobs</a></li>
+                    <li><a href="#internships">Internships</a></li>
+                    <li><a href="#results">Results</a></li>
+                    <li><a href="#admit-card">Admit Card</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Get in touch with us for any queries, partnerships, or support</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <main class="contact-main">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <section class="contact-form-section">
+                    <div class="section-card">
+                        <h2><i class="fas fa-envelope"></i> Send us a Message</h2>
+                        <p>Fill out the form below and we'll get back to you within 24 hours</p>
+                        
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="job-update">Job Update Request</option>
+                                    <option value="partnership">Partnership Opportunity</option>
+                                    <option value="advertising">Advertising Inquiry</option>
+                                    <option value="technical">Technical Support</option>
+                                    <option value="feedback">Feedback & Suggestions</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="5" required placeholder="Tell us more about your inquiry..."></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="newsletter" name="newsletter">
+                                    <span class="checkmark"></span>
+                                    Subscribe to our newsletter for job updates
+                                </label>
+                            </div>
+                            
+                            <div class="form-actions">
+                                <button type="submit" class="btn-submit">
+                                    <i class="fas fa-paper-plane"></i> Send Message
+                                </button>
+                                <button type="reset" class="btn-reset">
+                                    <i class="fas fa-redo"></i> Reset Form
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+
+                <!-- Contact Information -->
+                <section class="contact-info-section">
+                    <div class="section-card">
+                        <h2><i class="fas fa-info-circle"></i> Get in Touch</h2>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h3>Email Us</h3>
+                                    <p>support@khir.in</p>
+                                    <p>info@khir.in</p>
+                                    <small>We respond within 24 hours</small>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fab fa-whatsapp"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h3>WhatsApp</h3>
+                                    <p>+91 98765 43210</p>
+                                    <small>Available 9 AM - 6 PM</small>
+                                    <button class="btn-whatsapp-small" onclick="openWhatsApp()">
+                                        <i class="fab fa-whatsapp"></i> Start Chat
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fab fa-telegram"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h3>Telegram</h3>
+                                    <p>@khirin_jobs</p>
+                                    <small>Join our channel for daily updates</small>
+                                    <button class="btn-telegram-small" onclick="openTelegram()">
+                                        <i class="fab fa-telegram"></i> Join Channel
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h3>Business Hours</h3>
+                                    <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                                    <p>Saturday: 10:00 AM - 4:00 PM</p>
+                                    <p>Sunday: Closed</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- FAQ Section -->
+            <section class="faq-section">
+                <div class="section-card">
+                    <h2><i class="fas fa-question-circle"></i> Frequently Asked Questions</h2>
+                    
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                <h3>How do I apply for jobs listed on KHIR.IN?</h3>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Each job listing on KHIR.IN includes a direct "Apply Now" button that takes you to the official application page. We recommend reading the job description carefully and ensuring you meet all eligibility criteria before applying.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                <h3>Are all job listings on KHIR.IN free to access?</h3>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes! All job listings and information on KHIR.IN are completely free. We believe in providing equal access to job opportunities for everyone. You never need to pay to view or apply for jobs through our platform.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                <h3>How often are job listings updated?</h3>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>We update our job listings daily! Our team works around the clock to bring you the latest government and private sector job opportunities. Subscribe to our newsletter to receive daily updates directly in your inbox.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                <h3>Can I advertise my company's job openings on KHIR.IN?</h3>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Absolutely! We offer advertising solutions for companies looking to reach qualified candidates. Contact us at advertising@khir.in or fill out the contact form with "Advertising Inquiry" as the subject to learn more about our packages.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                <h3>How can I report incorrect job information?</h3>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>We strive for accuracy but occasionally errors may occur. If you find any incorrect information, please contact us immediately at support@khir.in with the details, and we'll investigate and update the information promptly.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Office Locations -->
+            <section class="locations-section">
+                <div class="section-card">
+                    <h2><i class="fas fa-map-marker-alt"></i> Our Presence</h2>
+                    
+                    <div class="locations-grid">
+                        <div class="location-card">
+                            <div class="location-icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <h3>Head Office</h3>
+                            <p>Delhi NCR, India</p>
+                            <p>Strategic location for better coverage of North India job markets</p>
+                        </div>
+                        
+                        <div class="location-card">
+                            <div class="location-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3>Regional Teams</h3>
+                            <p>Mumbai, Bangalore, Hyderabad, Kolkata</p>
+                            <p>Local teams providing region-specific job updates</p>
+                        </div>
+                        
+                        <div class="location-card">
+                            <div class="location-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <h3>Online Presence</h3>
+                            <p>Pan India Coverage</p>
+                                    <p>Digital platform reaching job seekers across all states</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Social Media Section -->
+                    <section class="social-section">
+                        <div class="section-card">
+                            <h2><i class="fas fa-share-alt"></i> Connect With Us</h2>
+                            <p>Follow us on social media for daily job updates and career tips</p>
+                            
+                            <div class="social-grid">
+                                <a href="#whatsapp" class="social-card whatsapp" onclick="openWhatsApp()">
+                                    <i class="fab fa-whatsapp"></i>
+                                    <h3>WhatsApp</h3>
+                                    <p>Join our community</p>
+                                    <span>50,000+ members</span>
+                                </a>
+                                
+                                <a href="#telegram" class="social-card telegram" onclick="openTelegram()">
+                                    <i class="fab fa-telegram"></i>
+                                    <h3>Telegram</h3>
+                                    <p>Daily job alerts</p>
+                                    <span>25,000+ subscribers</span>
+                                </a>
+                                
+                                <a href="#facebook" class="social-card facebook">
+                                    <i class="fab fa-facebook"></i>
+                                    <h3>Facebook</h3>
+                                    <p>Job updates & tips</p>
+                                    <span>15,000+ followers</span>
+                                </a>
+                                
+                                <a href="#twitter" class="social-card twitter">
+                                    <i class="fab fa-twitter"></i>
+                                    <h3>Twitter</h3>
+                                    <p>Real-time updates</p>
+                                    <span>8,000+ followers</span>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer-content">
+                        <div class="footer-section">
+                            <h4>About KHIR.IN</h4>
+                            <p>Your trusted platform for latest government and private job opportunities in India. We provide accurate and timely job updates to help you build your career.</p>
+                        </div>
+                        <div class="footer-section">
+                            <h4>Quick Links</h4>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="#privacy">Privacy Policy</a></li>
+                                <li><a href="#terms">Terms of Service</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-section">
+                            <h4>Contact Info</h4>
+                            <p><i class="fas fa-envelope"></i> support@khir.in</p>
+                            <p><i class="fab fa-whatsapp"></i> +91 98765 43210</p>
+                            <div class="social-links">
+                                <a href="#whatsapp"><i class="fab fa-whatsapp"></i></a>
+                                <a href="#telegram"><i class="fab fa-telegram"></i></a>
+                                <a href="#facebook"><i class="fab fa-facebook"></i></a>
+                                <a href="#twitter"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <p>&copy; 2026 KHIR.IN. All rights reserved. | Designed for job seekers in India</p>
+                    </div>
+                </div>
+            </footer>
+
+            <script src="script.js"></script>
+            <script src="contact-script.js"></script>
+        </body>
+        </html>

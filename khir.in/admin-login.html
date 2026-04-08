@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login - KHIR.IN | Job Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .admin-login-body {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .admin-login-wrapper {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+        }
+
+        .admin-login-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+
+        .admin-login-header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .admin-login-icon {
+            font-size: 48px;
+            color: #e74c3c;
+            margin-bottom: 15px;
+        }
+
+        .admin-login-header h2 {
+            color: #2c3e50;
+            margin-bottom: 8px;
+            font-size: 24px;
+        }
+
+        .admin-login-header p {
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+
+        .admin-form-group {
+            margin-bottom: 18px;
+        }
+
+        .admin-form-group label {
+            display: block;
+            margin-bottom: 6px;
+            color: #2c3e50;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        .admin-form-group input {
+            width: 100%;
+            padding: 10px 14px;
+            border: 2px solid #e1e8ed;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        .admin-form-group input:focus {
+            outline: none;
+            border-color: #e74c3c;
+            box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.1);
+        }
+
+        .admin-btn-login {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+
+        .admin-btn-login:hover {
+            transform: translateY(-2px);
+        }
+
+        .admin-login-footer {
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px solid #e1e8ed;
+        }
+
+        .admin-login-footer p {
+            color: #7f8c8d;
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+
+        .admin-login-footer a {
+            color: #e74c3c;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 12px;
+        }
+
+        .admin-demo-info {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 6px;
+            padding: 12px;
+            margin-bottom: 20px;
+            font-size: 12px;
+        }
+
+        .admin-demo-info h4 {
+            color: #856404;
+            margin-bottom: 6px;
+            font-size: 13px;
+        }
+
+        .admin-demo-info p {
+            color: #856404;
+            margin: 3px 0;
+        }
+    </style>
+</head>
+<body class="admin-login-body">
+    <div class="admin-login-wrapper">
+        <div class="admin-login-card">
+            <div class="admin-login-header">
+                <div class="admin-login-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h2>Admin Panel</h2>
+                <p>Secure access to website management</p>
+            </div>
+            
+            <div class="admin-demo-info">
+                <h4>Admin Credentials:</h4>
+                <p><strong>Username:</strong> admin</p>
+                <p><strong>Password:</strong> admin123</p>
+            </div>
+            
+            <form id="adminLoginForm" class="admin-login-form">
+                <div class="admin-form-group">
+                    <label for="username">Admin Username</label>
+                    <input type="text" id="username" name="username" required placeholder="Enter admin username">
+                </div>
+                
+                <div class="admin-form-group">
+                    <label for="password">Admin Password</label>
+                    <input type="password" id="password" name="password" required placeholder="Enter admin password">
+                </div>
+                
+                <button type="submit" class="admin-btn-login">
+                    <i class="fas fa-lock"></i> Login to Admin Panel
+                </button>
+            </form>
+            
+            <div class="admin-login-footer">
+                <p><a href="login.html">← User Login</a></p>
+                <p><a href="index.html">← Back to Home</a></p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById('adminLoginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            
+            // Check admin credentials
+            if (username === 'admin' && password === 'admin123') {
+                alert('Admin login successful! Welcome to KHIR.IN Admin Panel.');
+                window.location.href = 'index.html';
+            } else {
+                alert('Invalid admin credentials. Please use: admin / admin123');
+            }
+        });
+    </script>
+</body>
+</html>

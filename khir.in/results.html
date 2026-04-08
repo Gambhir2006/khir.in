@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Results - KHIR.IN | Latest Government & Private Exam Results</title>
+    <meta name="description" content="Check latest exam results for government jobs, competitive exams, and private sector recruitment. Get instant notifications for result announcements.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="page-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <h1><a href="index.html"><i class="fas fa-briefcase"></i> KHIR.IN</a></h1>
+                    <p>Your Career Gateway</p>
+                </div>
+                <div class="header-actions">
+                    <button class="btn-whatsapp"><i class="fab fa-whatsapp"></i> Join WhatsApp</button>
+                    <button class="btn-telegram"><i class="fab fa-telegram"></i> Join Telegram</button>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#govt-jobs">Govt Jobs</a></li>
+                    <li><a href="#private-jobs">Private Jobs</a></li>
+                    <li><a href="#internships">Internships</a></li>
+                    <li><a href="results.html" class="active">Results</a></li>
+                    <li><a href="#admit-card">Admit Card</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Exam Results</h1>
+            <p>Latest government and private exam results with direct links to official result portals</p>
+        </div>
+    </section>
+
+    <!-- Results Content -->
+    <main class="results-main">
+        <div class="container">
+            <div class="results-grid">
+                <!-- Main Results Section -->
+                <section class="results-section">
+                    <div class="section-card">
+                        <h2><i class="fas fa-trophy"></i> Latest Exam Results</h2>
+                        
+                        <!-- Search and Filter -->
+                        <div class="results-filters">
+                            <div class="search-box">
+                                <input type="text" placeholder="Search results by exam name, organization..." id="resultSearch">
+                                <button type="button" onclick="searchResults()"><i class="fas fa-search"></i> Search</button>
+                            </div>
+                            <div class="filter-tabs">
+                                <button class="tab-btn active" data-category="all">All Results</button>
+                                <button class="tab-btn" data-category="government">Government</button>
+                                <button class="tab-btn" data-category="private">Private</button>
+                                <button class="tab-btn" data-category="competitive">Competitive</button>
+                            </div>
+                        </div>
+
+                        <!-- Results List -->
+                        <div class="results-list" id="resultsList">
+                            <!-- Result 1 -->
+                            <article class="result-item" data-category="government">
+                                <div class="result-header">
+                                    <span class="result-badge announced">Result Announced</span>
+                                    <span class="result-date">Today</span>
+                                </div>
+                                <h3><a href="#result-1">UPSC Civil Services Final Result 2025 Released</a></h3>
+                                <div class="result-meta">
+                                    <span><i class="fas fa-university"></i> Union Public Service Commission</span>
+                                    <span><i class="fas fa-calendar"></i> Exam: September 2025</span>
+                                    <span><i class="fas fa-users"></i> 900+ Posts</span>
+                                </div>
+                                <div class="result-details">
+                                    <p><strong>Posts:</strong> IAS, IFS, IPS, IRS and other Group A Services</p>
+                                    <p><strong>Result Status:</strong> Final Result Released</p>
+                                    <p><strong>Next Step:</strong> Document verification and medical examination</p>
+                                </div>
+                                <div class="result-actions">
+                                    <button class="btn-view-result" onclick="viewResult(1)">
+                                        <i class="fas fa-external-link-alt"></i> View Result
+                                    </button>
+                                    <button class="btn-download" onclick="downloadResult(1)">
+                                        <i class="fas fa-download"></i> Download PDF
+                                    </button>
+                                    <button class="btn-share-whatsapp" onclick="shareResult(1)">
+                                        <i class="fab fa-whatsapp"></i> Share
+                                    </button>
+                                </div>
+                            </article>
+
+                            <!-- Result 2 -->
+                            <article class="result-item" data-category="government">
+                                <div class="result-header">
+                                    <span class="result-badge announced">Result Announced</span>
+                                    <span class="result-date">2 days ago</span>
+                                </div>
+                                <h3><a href="#result-2">SSC CGL Tier 2 Result 2025 Released</a></h3>
+                                <div class="result-meta">
+                                    <span><i class="fas fa-university"></i> Staff Selection Commission</span>
+                                    <span><i class="fas fa-calendar"></i> Exam: November 2025</span>
+                                    <span><i class="fas fa-users"></i> 3500+ Posts</span>
+                                </div>
+                                <div class="result-details">
+                                    <p><strong>Posts:</strong> Assistant, Auditor, Tax Assistant, Inspector</p>
+                                    <p><strong>Result Status:</strong> Tier 2 Result Released</p>
+                                    <p><strong>Next Step:</strong> Tier 3 (Descriptive Paper) on March 15, 2026</p>
+                                </div>
+                                <div class="result-actions">
+                                    <button class="btn-view-result" onclick="viewResult(2)">
+                                        <i class="fas fa-external-link-alt"></i> View Result
+                                    </button>
+                                    <button class="btn-download" onclick="downloadResult(2)">
+                                        <i class="fas fa-download"></i> Download PDF
+                                    </button>
+                                    <button class="btn-share-whatsapp" onclick="shareResult(2)">
+                                        <i class="fab fa-whatsapp"></i> Share
+                                    </button>
+                                </div>
+                            </article>
+
+                            <!-- Result 3 -->
+                            <article class="result-item" data-category="competitive">
+                                <div class="result-header">
+                                    <span class="result-badge announced">Result Announced</span>
+                                    <span class="result-date">3 days ago</span>
+                                </div>
+                                <h3><a href="#result-3">IBPS PO Main Result 2025 Released</a></h3>
+                                <div class="result-meta">
+                                    <span><i class="fas fa-university"></i> Institute of Banking Personnel Selection</span>
+                                    <span><i class="fas fa-calendar"></i> Exam: October 2025</span>
+                                    <span><i class="fas fa-users"></i> 4000+ Posts</span>
+                                </div>
+                                <div class="result-details">
+                                    <p><strong>Posts:</strong> Probationary Officer in 11 Public Sector Banks</p>
+                                    <p><strong>Result Status:</strong> Main Exam Result Released</p>
+                                    <p><strong>Next Step:</strong> Interview from March 20, 2026</p>
+                                </div>
+                                <div class="result-actions">
+                                    <button class="btn-view-result" onclick="viewResult(3)">
+                                        <i class="fas fa-external-link-alt"></i> View Result
+                                    </button>
+                                    <button class="btn-download" onclick="downloadResult(3)">
+                                        <i class="fas fa-download"></i> Download PDF
+                                    </button>
+                                    <button class="btn-share-whatsapp" onclick="shareResult(3)">
+                                        <i class="fab fa-whatsapp"></i> Share
+                                    </button>
+                                </div>
+                            </article>
+
+                            <!-- Result 4 -->
+                            <article class="result-item" data-category="government">
+                                <div class="result-header">
+                                    <span class="result-badge expected">Expected Soon</span>
+                                    <span class="result-date">Expected: March 10, 2026</span>
+                                </div>
+                                <h3><a href="#result-4">RRB Group D Result 2025 - Expected Soon</a></h3>
+                                <div class="result-meta">
+                                    <span><i class="fas fa-university"></i> Railway Recruitment Board</span>
+                                    <span><i class="fas fa-calendar"></i> Exam: August-September 2025</span>
+                                    <span><i class="fas fa-users"></i> 1,00,000+ Posts</span>
+                                </div>
+                                <div class="result-details">
+                                    <p><strong>Posts:</strong> Track Maintainer, Helper, Assistant Pointsman</p>
+                                    <p><strong>Result Status:</strong> Under Process - Expected Soon</p>
+                                    <p><strong>Next Step:</strong> Physical Efficiency Test (PET)</p>
+                                </div>
+                                <div class="result-actions">
+                                    <button class="btn-notify" onclick="notifyResult(4)">
+                                        <i class="fas fa-bell"></i> Notify Me
+                                    </button>
+                                    <button class="btn-share-whatsapp" onclick="shareResult(4)">
+                                        <i class="fab fa-whatsapp"></i> Share
+                                    </button>
+                                </div>
+                            </article>
+
+                            <!-- Result 5 -->
+                            <article class="result-item" data-category="private">
+                                <div class="result-header">
+                                    <span class="result-badge announced">Result Announced</span>
+                                    <span class="result-date">5 days ago</span>
+                                </div>
+                                <h3><a href="#result-5">TCS National Qualifier Test Result 2025</a></h3>
+                                <div class="result-meta">
+                                    <span><i class="fas fa-building"></i> Tata Consultancy Services</span>
+                                    <span><i class="fas fa-calendar"></i> Exam: December 2025</span>
+                                    <span><i class="fas fa-users"></i> 5000+ Posts</span>
+                                </div>
+                                <div class="result-details">
+                                    <p><strong>Posts:</strong> Software Developer, System Engineer, IT Analyst</p>
+                                    <p><strong>Result Status:</strong> Written Test Result Released</p>
+                                    <p><strong>Next Step:</strong> Technical and HR Interview</p>
+                                </div>
+                                <div class="result-actions">
+                                    <button class="btn-view-result" onclick="viewResult(5)">
+                                        <i class="fas fa-external-link-alt"></i> View Result
+                                    </button>
+                                    <button class="btn-download" onclick="downloadResult(5)">
+                                        <i class="fas fa-download"></i> Download PDF
+                                    </button>
+                                    <button class="btn-share-whatsapp" onclick="shareResult(5)">
+                                        <i class="fab fa-whatsapp"></i> Share
+                                    </button>
+                                </div>
+                            </article>
+
+                            <!-- Result 6 -->
+                            <article class="result-item" data-category="government">
+                                <div class="result-header">
+                                    <span class="result-badge expected">Expected Soon</span>
+                                    <span class="result-date">Expected: March 15, 2026</span>
+                                </div>
+                                <h3><a href="#result-6">Bihar Police SI Result 2025 - Expected Soon</a></h3>
+                                <div class="result-meta">
+                                    <span><i class="fas fa-university"></i> Central Selection Board of Constable</span>
+                                    <span><i class="fas fa-calendar"></i> Exam: December 2025</span>
+                                    <span><i class="fas fa-users"></i> 2000+ Posts</span>
+                                </div>
+                                <div class="result-details">
+                                    <p><strong>Posts:</strong> Sub Inspector, Sergeant</p>
+                                    <p><strong>Result Status:</strong> Under Evaluation - Expected Soon</p>
+                                    <p><strong>Next Step:</strong> Physical Test and Medical Examination</p>
+                                </div>
+                                <div class="result-actions">
+                                    <button class="btn-notify" onclick="notifyResult(6)">
+                                        <i class="fas fa-bell"></i> Notify Me
+                                    </button>
+                                    <button class="btn-share-whatsapp" onclick="shareResult(6)">
+                                        <i class="fab fa-whatsapp"></i> Share
+                                    </button>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Load More -->
+                        <div class="load-more">
+                            <button class="btn-load-more" onclick="loadMoreResults()">
+                                Load More Results <i class="fas fa-arrow-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Sidebar -->
+                <aside class="results-sidebar">
+                    <!-- Quick Links -->
+                    <div class="widget">
+                        <h3><i class="fas fa-link"></i> Quick Result Links</h3>
+                        <ul class="quick-links">
+                            <li><a href="#upsc" target="_blank">UPSC Results</a></li>
+                            <li><a href="#ssc" target="_blank">SSC Results</a></li>
+                            <li><a href="#ibps" target="_blank">IBPS Results</a></li>
+                            <li><a href="#rrb" target="_blank">RRB Results</a></li>
+                            <li><a href="#banking" target="_blank">Banking Results</a></li>
+                            <li><a href="#state" target="_blank">State PSC Results</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Result Categories -->
+                    <div class="widget">
+                        <h3><i class="fas fa-folder"></i> Result Categories</h3>
+                        <ul class="category-list">
+                            <li><a href="#civil-services">Civil Services (45)</a></li>
+                            <li><a href="#banking">Banking & Finance (89)</a></li>
+                            <li><a href="#railway">Railway (67)</a></li>
+                            <li><a href="#defense">Defense (34)</a></li>
+                            <li><a href="#teaching">Teaching (56)</a></li>
+                            <li><a href="#engineering">Engineering (78)</a></li>
+                            <li><a href="#medical">Medical (23)</a></li>
+                            <li><a href="#private-sector">Private Sector (112)</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Upcoming Results -->
+                    <div class="widget">
+                        <h3><i class="fas fa-clock"></i> Upcoming Results</h3>
+                        <ul class="upcoming-results">
+                            <li>
+                                <div class="upcoming-info">
+                                    <h4>SSC CHSL Tier 1 Result</h4>
+                                    <p>Expected: March 12, 2026</p>
+                                </div>
+                                <button class="btn-notify-small" onclick="notifyResult('chsl')">
+                                    <i class="fas fa-bell"></i>
+                                </button>
+                            </li>
+                            <li>
+                                <div class="upcoming-info">
+                                    <h4>UPPSC Prelims Result</h4>
+                                    <p>Expected: March 18, 2026</p>
+                                </div>
+                                <button class="btn-notify-small" onclick="notifyResult('uppsc')">
+                                    <i class="fas fa-bell"></i>
+                                </button>
+                            </li>
+                            <li>
+                                <div class="upcoming-info">
+                                    <h4>Karnataka PSC Mains Result</h4>
+                                    <p>Expected: March 20, 2026</p>
+                                </div>
+                                <button class="btn-notify-small" onclick="notifyResult('kpsc')">
+                                    <i class="fas fa-bell"></i>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Result Notifications -->
+                    <div class="widget">
+                        <h3><i class="fas fa-bell"></i> Result Notifications</h3>
+                        <p>Get instant notifications when results are announced</p>
+                        <form class="notification-form">
+                            <input type="email" placeholder="Enter your email" required>
+                            <input type="tel" placeholder="Mobile number (optional)">
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+
+                    <!-- Advertisement -->
+                    <div class="widget ad-widget">
+                        <h3><i class="fas fa-ad"></i> Advertisement</h3>
+                        <div class="ad-space">
+                            <p>Ad Space Available</p>
+                            <span>300x600</span>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+
+            <!-- Result Statistics -->
+            <section class="stats-section">
+                <div class="section-card">
+                    <h2><i class="fas fa-chart-bar"></i> Result Statistics</h2>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number">2,456</div>
+                            <div class="stat-label">Results Published This Month</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">15,234</div>
+                            <div class="stat-label">Candidates Notified</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">98.5%</div>
+                            <div class="stat-label">Accuracy Rate</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">Result Updates</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About KHIR.IN</h4>
+                    <p>Your trusted platform for latest government and private job opportunities in India. We provide accurate and timely job updates to help you build your career.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <div class="social-links">
+                        <a href="#whatsapp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#telegram"><i class="fab fa-telegram"></i></a>
+                        <a href="#facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <p><i class="fas fa-envelope"></i> support@khir.in</p>
+                    <p><i class="fab fa-whatsapp"></i> +91 98765 43210</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 KHIR.IN. All rights reserved. | Designed for job seekers in India</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="results-script.js"></script>
+</body>
+</html>
